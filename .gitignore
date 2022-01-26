@@ -1,3 +1,9 @@
+# Makefiles
+*.mk
+
+# Manifest (C) files
+*.h
+
 # Prerequisites
 *.d
 
