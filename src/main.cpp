@@ -128,7 +128,7 @@ void autonomous(void) {
 
 drive(80, 2, 300);
 drive(40, 2.8, 750);
-
+// adding separate auton files for skills and general field positions
 //drive(70, -6, 0);
 
 }
