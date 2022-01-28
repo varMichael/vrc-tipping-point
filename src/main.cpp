@@ -172,6 +172,7 @@ Ch3 = Controller1.Axis3.position();
 Ch4 = Controller1.Axis4.position();
 
 
+// mecanum drive has been removed circa mid december 2021
 /*DT_FrontLeft.spin(forward, Ch3 + Ch4 + Ch1, percent);
 DT_BackLeft.spin(forward, Ch3 + Ch4 - Ch1, percent);
 DT_FrontRight.spin(forward, Ch3 - Ch4 - Ch1, percent);
