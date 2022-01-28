@@ -126,8 +126,9 @@ void autonomous(void) {
   // Insert autonomous user code here.
   // ..........................................................................
 
-drive(80, 2, 300);
-drive(40, 2.8, 750);
+  // Michael slowly realized that the goal doesn't count for autonomous
+// drive(80, 2, 300);
+// drive(40, 2.8, 750);
 // adding separate auton files for skills and general field positions
 //drive(70, -6, 0);
 
