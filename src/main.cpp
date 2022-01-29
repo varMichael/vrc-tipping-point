@@ -82,12 +82,13 @@ void turn(int velo, float dist, int delay) {
 }*/
 
 
-void forkie(float velo, float dist) {
+// commented out forkie framework because we removed the fork lift for the time being
+/* void forkie(float velo, float dist) {
   ForkLift.setVelocity(velo, pct);
   ForkLift.rotateFor(forward, dist, rev);
   ForkLift.setVelocity(velo, pct);
   ForkLift.rotateFor(reverse, dist, rev);
-}
+}*/ 
 
 // 
 
@@ -172,6 +173,15 @@ Ch3 = Controller1.Axis3.position();
 Ch4 = Controller1.Axis4.position();
 
 
+// updated location of pneumatics code {easier access because I'm lazy :P}
+if (Controller1.ButtonR1.pressing()) {
+  FrontPistonB.set(true);
+}
+else if (Controller1.ButtonR2.pressing()) {
+  FrontPistonB.set(false);
+}
+else {}
+
 // mecanum drive has been removed circa mid december 2021
 /*DT_FrontLeft.spin(forward, Ch3 + Ch4 + Ch1, percent);
 DT_BackLeft.spin(forward, Ch3 + Ch4 - Ch1, percent);
@@ -185,6 +195,8 @@ DT_BackRight.spin(forward, Ch3 - Ch4, percent);
 DT_FrontLeft2.spin(forward, Ch3 + Ch4, percent);
 DT_FrontRight2.spin(forward, Ch3 - Ch4, percent);
 
+    
+// prints velocity of all four motors; updated four-motor drive velocity to six-motor drive velocity (DT_FrontLeft2 and DT_FrontRight2)
 Brain.Screen.setPenColor(purple);
 Brain.Screen.setCursor(1, 1);
 Brain.Screen.print("FrontLeft Motor Velocity");
@@ -212,18 +224,21 @@ Brain.Screen.print("BackRight Motor Velocity");
 Brain.Screen.setPenColor(green);
 Brain.Screen.setCursor(11, 1);
 Brain.Screen.print(DT_BackRight.velocity(pct));
+    
+Brain.Screen.setPenColor(purple);
+Brain.Screen.setCursor(14, 1);
+Brain.Screen.print("FrontLeft2 Motor Velocity");
+Brain.Screen.setPenColor(green);
+Brain.Screen.setCursor(15, 1);
+Brain.Screen.print(DT_FrontLeft2.velocity(pct));
 
+Brain.Screen.setPenColor(purple);
+Brain.Screen.setCursor(18, 1);
+Brain.Screen.print("FrontRight2 Motor Velocity");
+Brain.Screen.setPenColor(green);
+Brain.Screen.setCursor(19, 1);
+Brain.Screen.print(DT_FrontRight2.velocity(pct));
 
-
-if (Controller1.ButtonR1.pressing()) {
-  FrontPistonB.set(true);
-}
-
-else if (Controller1.ButtonR2.pressing()) {
-  FrontPistonB.set(false);
-}
-
-else {}
 
 
     wait(20, msec); // Sleep the task for a short amount of time to
