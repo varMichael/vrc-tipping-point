@@ -83,6 +83,7 @@ void turn(int velo, float dist, int delay) {
 
 
 // commented out forkie framework because we removed the fork lift for the time being
+// Feb 3, 2022, RIP forkie, you will perhaps be missed idrk. We're replacing forkie with forko, a new and improved lift that does everything forkie failed to do :D
 /* void forkie(float velo, float dist) {
   ForkLift.setVelocity(velo, pct);
   ForkLift.rotateFor(forward, dist, rev);
@@ -127,7 +128,7 @@ void autonomous(void) {
   // Insert autonomous user code here.
   // ..........................................................................
 
-  // Michael slowly realized that the goal doesn't count for autonomous and that the 3 hours spent on 2 lines of code was completely not worth it. 
+  // Michael slowly realized that the ramp and tilter do not count for autonomous and that the 3 hours spent on 2 lines of code were completely not worth it. 
 // drive(80, 2, 300);
 // drive(40, 2.8, 750);
 // adding separate auton files for skills and general field positions
