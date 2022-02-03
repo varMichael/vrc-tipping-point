@@ -21,3 +21,5 @@ extern motor DT_FrontLeft2;
  * This should be called at the start of your int main function.
  */
 void  vexcodeInit( void );
+
+// this file is apparently important, me don't know why, but me know that it has a use and me understand that me don't understand.
