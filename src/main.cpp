@@ -34,7 +34,7 @@ float Ch2;
 float Ch3;
 float Ch4;
 
-
+// vision sensor code will be added, it has been fully programmed
 
 void drive(int velo, float dist, int delay) {
   DT_FrontLeft.setVelocity(velo, pct);
