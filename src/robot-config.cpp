@@ -14,13 +14,17 @@ motor DT_BackLeft = motor(PORT4, ratio18_1, false);
 motor DT_BackRight = motor(PORT5, ratio18_1, true);
 motor ConvB = motor(PORT16, ratio18_1, false);
 inertial Inertial_Sens = inertial(PORT20);
-motor ForkLiftMotorA = motor(PORT9, ratio36_1, true);
-motor ForkLiftMotorB = motor(PORT10, ratio36_1, false);
+motor ForkLiftMotorA = motor(PORT10, ratio36_1, true);
+motor ForkLiftMotorB = motor(PORT9, ratio36_1, false);
 motor_group ForkLift = motor_group(ForkLiftMotorA, ForkLiftMotorB);
 controller Controller1 = controller(primary);
 digital_out FrontPistonB = digital_out(Brain.ThreeWirePort.B);
 motor DT_FrontRight2 = motor(PORT18, ratio18_1, false);
 motor DT_FrontLeft2 = motor(PORT19, ratio18_1, true);
+digital_out BackPistonA = digital_out(Brain.ThreeWirePort.C);
+/*vex-vision-config:begin*/
+vision Vsens = vision (PORT1, 50);
+/*vex-vision-config:end*/
 
 // VEXcode generated functions
 // define variable for remote controller enable/disable
