@@ -2,11 +2,15 @@
 VEX Robotics Competition Tipping Point Source Code 2021-2022
 
 Tipping Point Source Code
+ㅤ
+ㅤ***Main Files {.cpp}***
   - **main.cpp** contains the main code in order for the robot to run.
       - *this file contains User Control and Autonomous code*
   - **robot-config.cpp** states motors/motor groups and/or other devices (optical sensors, inertial sensors, gps, etc). 
   - **autonomous-config.cpp** will *hopefully* contain two options for autonomous (left side of field, right side of field) and skills autonomous.
 ㅤ
+ㅤ
+  ***{#include} Files***
   - **vex.h** is the manifest file with {#include} files.
   - **robot-config.h** is the manifest file with VEXcode devices stated (an {#include} file).
   - **vsens.h** is the inclusion file that states all Vision Sensor values which are derived from calibration.
