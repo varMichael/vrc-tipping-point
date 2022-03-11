@@ -9,6 +9,11 @@ Tipping Point Source Code
   - **robot-config.cpp** states motors/motor groups and/or other devices (optical sensors, inertial sensors, gps, etc). 
   - **autonomous-config.cpp** will *hopefully* contain two options for autonomous (left side of field, right side of field) and skills autonomous.
 ㅤ
+ㅤ
+ㅤㅤ
+ㅤㅤㅤㅤ
+ㅤ
+ㅤㅤㅤㅤㅤㅤㅤㅤ
   ***{#include} Files***
   - **vex.h** is the manifest file with {#include} files.
   - **robot-config.h** is the manifest file with VEXcode devices stated (an {#include} file).
