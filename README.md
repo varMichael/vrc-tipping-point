@@ -2,7 +2,7 @@
 VEX Robotics Competition Tipping Point Source Code 2021-2022
 
 Tipping Point Source Code
-ㅤ
+
 ***Main Files {.cpp}***
   - **main.cpp** contains the main code in order for the robot to run.
       - *this file contains User Control and Autonomous code*
