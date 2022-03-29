@@ -77,9 +77,9 @@ void hasYellowCallback() {
   Brain.Screen.setCursor(5, 1);
   Vsens.takeSnapshot(BGOAL);
   if (Vsens.objectCount > 0) {
-    Brain.Screen.print("Green Object Found");
+    Brain.Screen.print("Yellow Object Found");
   } else {
-    Brain.Screen.print("No Green Object");
+    Brain.Screen.print("No Yellow Green Object");
   }
 }
 
