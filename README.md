@@ -11,9 +11,9 @@ Tipping Point Source Code
 
 
 ***Include Files {.h}***
-  - **vex.h** is the manifest file with {#include} files.
-  - **robot-config.h** is the manifest file with VEXcode devices stated (an {#include} file).
-  - **vsens.h** is the inclusion file that states all Vision Sensor values which are derived from calibration.
+  - **vex.h** is a manifest file with {#include} files.
+  - **robot-config.h** is a manifest file with VEXcode devices stated (an {#include} file).
+  - **vsens.h** is an inclusion file that states all Vision Sensor values which are derived from calibration.
 
 # Installation
 **Downloading VEXcode Pro V5**
