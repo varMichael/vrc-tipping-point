@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
-/*    Author:       VEX                                                       */
+/*    Author:       ya momma                                                  */
 /*    Created:      Thu Sep 26 2019                                           */
 /*    Description:  Competition Template                                      */
 /*                                                                            */
